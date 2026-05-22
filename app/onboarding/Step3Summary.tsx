@@ -12,21 +12,21 @@ interface Step3Props {
   isPending: boolean;
 }
 
-const skinLabels: Record<SkinType, string> = {
+const skinLabels: Record<Exclude<SkinType, null>, string> = {
   dry: "Seca o tirante",
   oily: "Grasa o brillante",
   mixed: "Mixta",
   sensitive: "Sensible",
 };
 
-const concernLabels: Record<SkinConcern, string> = {
+const concernLabels: Record<Exclude<SkinConcern, null>, string> = {
   hydration: "Hidratación profunda",
   anti_aging: "Antiedad",
   acne: "Control de acné",
   spots: "Uniformar manchas",
 };
 
-const formulaMap: Record<SkinType, string> = {
+const formulaMap: Record<Exclude<SkinType, null>, string> = {
   dry: "AquaRestore + Hyaluronic Serum",
   oily: "PoreControl + Niacinamide Complex",
   mixed: "BalanceFluid + Dual-Action Toner",
