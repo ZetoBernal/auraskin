@@ -3,36 +3,52 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
+import { useAuthStore } from "@/store/auth-store";
+import AuthGuard from "@/components/AuthGuard";
 
 export default function DashboardPage() {
+  const router = useRouter();
+  const { user, logout } = useAuthStore();
+
+  const handleLogout = () => {
+    logout();
+    router.replace("/login");
+  };
+
   return (
-    <div className="min-h-screen bg-brand-gray-light flex flex-col font-sans">
-      {/* Header */}
-      <header className="h-16 bg-white border-b border-zinc-100 flex items-center px-6 justify-between sticky top-0 z-50">
-        <Link href="/" className="flex items-center gap-2.5 group">
-          <div className="w-8 h-8 rounded-md bg-brand-teal flex items-center justify-center transition-transform duration-300 group-hover:scale-105 shadow-xs">
-            <Image
-              src="/logo-droplet.png"
-              alt="Auraskin Icon"
-              width={16}
-              height={16}
-              className="object-contain"
-            />
-          </div>
-          <span className="font-semibold text-lg tracking-tight text-brand-dark-teal">
-            Auraskin
-          </span>
-        </Link>
-        <div className="flex items-center gap-4">
-          <span className="text-xs font-semibold text-zinc-500">Hola, Sofía</span>
-          <Link
-            href="/"
-            className="text-xs font-semibold text-brand-dark-teal hover:underline transition-all"
-          >
-            Cerrar Sesión
+    <AuthGuard>
+      <div className="min-h-screen bg-brand-gray-light flex flex-col font-sans">
+        {/* Header */}
+        <header className="h-16 bg-white border-b border-zinc-100 flex items-center px-6 justify-between sticky top-0 z-50">
+          <Link href="/" className="flex items-center gap-2.5 group">
+            <div className="w-8 h-8 rounded-md bg-brand-teal flex items-center justify-center transition-transform duration-300 group-hover:scale-105 shadow-xs">
+              <Image
+                src="/images/logo-droplet.png"
+                alt="Auraskin Icon"
+                width={16}
+                height={16}
+                className="object-contain"
+              />
+            </div>
+            <span className="font-semibold text-lg tracking-tight text-brand-dark-teal">
+              Auraskin
+            </span>
           </Link>
-        </div>
-      </header>
+          <div className="flex items-center gap-4">
+            <div className="text-right">
+              <p className="text-xs font-semibold text-zinc-500">Hola, {user?.name ?? "cliente"}</p>
+              <p className="text-[11px] text-zinc-400">{user?.email ?? ""}</p>
+            </div>
+            <button
+              type="button"
+              onClick={handleLogout}
+              className="text-xs font-semibold text-brand-dark-teal hover:underline transition-all"
+            >
+              Cerrar sesión
+            </button>
+          </div>
+        </header>
 
       {/* Main Grid */}
       <main className="flex-1 max-w-6xl mx-auto w-full p-6 sm:p-8 grid grid-cols-1 md:grid-cols-12 gap-8">
@@ -199,5 +215,6 @@ export default function DashboardPage() {
         </span>
       </footer>
     </div>
+  </AuthGuard>
   );
 }
