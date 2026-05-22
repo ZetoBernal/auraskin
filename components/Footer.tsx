@@ -13,7 +13,7 @@ export default function Footer() {
           <Link href="/" className="flex items-center gap-2.5 group">
             <div className="w-8 h-8 rounded-md bg-brand-teal flex items-center justify-center transition-transform duration-300 group-hover:scale-105 shadow-xs">
               <Image
-                src="/logo-droplet.png"
+                src="/images/logo-droplet.png"
                 alt="Auraskin Icon"
                 width={16}
                 height={16}
@@ -27,7 +27,7 @@ export default function Footer() {
           
           <div className="mt-2 text-xs text-zinc-400 space-y-1">
             <p>© {new Date().getFullYear()} Auraskin.</p>
-            <p className="font-medium text-zinc-500">Dermatológicamente probado.</p>
+            <p className="font-medium text-zinc-500">Dermatológica y capilarmente probado.</p>
           </div>
         </div>
 

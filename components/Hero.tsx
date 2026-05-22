@@ -22,7 +22,8 @@ export default function Hero() {
 
           {/* Headline */}
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-zinc-900 leading-[1.1] mb-6">
-            Tu piel merece un <br />
+            Tu piel merece <br />
+            un <br />
             <span className="font-serif italic font-normal text-brand-dark-teal lowercase">
               cuidado inteligente
             </span>
@@ -30,7 +31,7 @@ export default function Hero() {
 
           {/* Description */}
           <p className="text-zinc-600 text-base md:text-lg leading-relaxed max-w-lg mb-8">
-            Recibe en tu puerta una selección personalizada de productos dermatológicos de alta gama, adaptados a tus necesidades únicas cada mes.
+            Recibe en tu puerta una selección personalizada de productos dermatológicos adaptados a ti, junto con fórmulas complementarias de cuidado capilar cada mes.
           </p>
 
           {/* CTA Buttons */}
@@ -51,24 +52,32 @@ export default function Hero() {
 
           {/* Social Proof */}
           <div className="flex items-center gap-3">
+            <div className="flex -space-x-2">
+              <div className="relative w-8 h-8 rounded-full border-2 border-white overflow-hidden bg-zinc-100 flex items-center justify-center">
+                {/* Visual indicator of smart custom routine */}
+                <div className="w-full h-full bg-brand-teal flex items-center justify-center text-[10px] text-white font-bold">
+                  AI
+                </div>
+              </div>
+            </div>
             <span className="text-xs font-medium text-zinc-500 tracking-wide">
-              Unete a más pieles brillantes
+              Unido a más de 12k personas con brillo único
             </span>
           </div>
         </div>
 
         {/* Right Visual Column */}
         <div className="md:col-span-5 relative w-full flex justify-center items-center">
-          {/* Glassmorphic Shadow Base / Backdrop shadow for the image */}
+          {/* Glassmorphic Shadow Base */}
           <div className="relative w-[320px] h-[320px] sm:w-[380px] sm:h-[380px] md:w-[400px] md:h-[400px] flex justify-center items-center">
             {/* Soft backdrop blur circle behind product box */}
             <div className="absolute inset-4 bg-gradient-to-tr from-brand-teal/30 to-brand-teal-light rounded-3xl blur-2xl opacity-75" />
             
-            {/* The Box Image */}
+            {/* The Box Image SVG */}
             <div className="relative w-full h-full transform hover:scale-102 transition-transform duration-500 ease-out drop-shadow-[0_20px_35px_rgba(28,82,90,0.12)]">
               <Image
                 src="/images/Box_Aura.svg"
-                alt="Auraskin Smart Box"
+                alt="Auraskin Smart Box (Piel y Cabello)"
                 fill
                 priority
                 className="object-contain"

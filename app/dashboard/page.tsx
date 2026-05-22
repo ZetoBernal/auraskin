@@ -66,7 +66,13 @@ export default function DashboardPage() {
                   • 1x Limpiador Equilibrante Aloe (120ml)
                 </span>
                 <span className="text-sm font-semibold text-zinc-800">
-                  • 1x Regalo: Cepillo Sónico Facial
+                  • 1x Champú Personalizado AI-Hair (250ml)
+                </span>
+                <span className="text-sm font-semibold text-zinc-800">
+                  • 1x Acondicionador Nutritivo AI-Hair (250ml)
+                </span>
+                <span className="text-sm font-semibold text-zinc-800">
+                  • 1x Regalo: Cepillo Sónico + Masajeador Capilar
                 </span>
               </div>
               <div className="flex flex-col gap-1">
@@ -86,7 +92,7 @@ export default function DashboardPage() {
           {/* AI Skin Routine Card */}
           <div className="bg-white rounded-3xl p-6 sm:p-8 border border-zinc-150 shadow-xs">
             <h2 className="text-lg font-bold text-zinc-900 mb-5">
-              Tu Rutina Personalizada de Piel
+              Tu Rutina Personalizada de Cuidado (Piel & Cabello)
             </h2>
             <div className="space-y-4">
               {/* Routine Step 1 */}
@@ -111,6 +117,19 @@ export default function DashboardPage() {
                   <h4 className="text-sm font-bold text-zinc-800">Noche: Exfoliación Sónica</h4>
                   <p className="text-xs text-zinc-500 mt-1 leading-relaxed">
                     Usa el Cepillo de Limpieza Sónico de regalo durante 1 minuto con tu limpiador para eliminar impurezas profundas acumuladas durante el día.
+                  </p>
+                </div>
+              </div>
+
+              {/* Routine Step 3 */}
+              <div className="flex items-start gap-4 p-4 hover:bg-brand-gray-light rounded-2xl border border-transparent hover:border-zinc-150 transition-all duration-300">
+                <span className="w-8 h-8 rounded-full bg-brand-teal/10 text-brand-dark-teal flex items-center justify-center font-bold text-sm shrink-0">
+                  3
+                </span>
+                <div>
+                  <h4 className="text-sm font-bold text-zinc-800">Días Alternos: Lavado & Masaje Capilar</h4>
+                  <p className="text-xs text-zinc-500 mt-1 leading-relaxed">
+                    Aplica tu Champú Personalizado AI-Hair sobre el cuero cabelludo húmedo. Masajea suavemente con el Masajeador Capilar de silicona incluido durante 2 minutos para activar la microcirculación antes de aclarar con abundante agua templada y aplicar el acondicionador.
                   </p>
                 </div>
               </div>

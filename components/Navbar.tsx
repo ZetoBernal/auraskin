@@ -33,7 +33,7 @@ export default function Navbar() {
         <Link href="/" className="flex items-center gap-2.5 group">
           <div className="w-8 h-8 rounded-md bg-brand-teal flex items-center justify-center transition-transform duration-300 group-hover:scale-105 shadow-xs">
             <Image
-              src="/logo-droplet.png"
+              src="/images/logo-droplet.png"
               alt="Auraskin Icon"
               width={16}
               height={16}
@@ -60,10 +60,10 @@ export default function Navbar() {
             Planes
           </a>
           <a
-            href="#tienda"
+            href="#faq"
             className="text-sm font-medium text-zinc-600 hover:text-brand-dark-teal transition-colors"
           >
-            Tienda
+            Preguntas
           </a>
         </nav>
 
@@ -133,11 +133,11 @@ export default function Navbar() {
             Planes
           </a>
           <a
-            href="#tienda"
+            href="#faq"
             onClick={() => setIsOpen(false)}
             className="text-base font-medium text-zinc-700 hover:text-brand-dark-teal py-1"
           >
-            Tienda
+            Preguntas
           </a>
           <hr className="border-zinc-100 my-1" />
           <Link

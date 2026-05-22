@@ -131,7 +131,7 @@ export default function QuizPage() {
               
               {/* Description */}
               <p className="text-zinc-650 text-sm leading-relaxed max-w-md mb-8 text-zinc-600">
-                Lumina AI ha analizado tus respuestas. Tu fórmula de ingredientes activos y cepillo sónico están siendo preparados. 
+                Lumina AI ha analizado tus respuestas. Tu fórmula de ingredientes activos y tu cepillo sónico están listos para ser preparados. Su caja también incluirá una rutina de cuidado capilar.
               </p>
 
               {/* Box Info */}
@@ -139,14 +139,18 @@ export default function QuizPage() {
                 <h3 className="text-xs font-bold text-zinc-700 uppercase tracking-wider mb-3">
                   Tu Recomendación
                 </h3>
-                <div className="space-y-2">
-                  <div className="flex justify-between text-xs font-medium text-zinc-600">
+                <div className="space-y-3">
+                  <div className="flex flex-col sm:flex-row sm:justify-between text-xs font-medium text-zinc-600 gap-1">
                     <span>Fórmula recomendada:</span>
-                    <span className="font-bold text-brand-dark-teal">AquaControl + Hydration Booster</span>
+                    <span className="font-bold text-brand-dark-teal sm:text-right">AquaControl + Hydration Booster</span>
                   </div>
-                  <div className="flex justify-between text-xs font-medium text-zinc-600">
+                  <div className="flex flex-col sm:flex-row sm:justify-between text-xs font-medium text-zinc-600 gap-1 border-t border-zinc-200/60 pt-2">
+                    <span>Cuidado capilar de regalo:</span>
+                    <span className="font-bold text-brand-dark-teal sm:text-right">Champú & Acondicionador AI-Hair</span>
+                  </div>
+                  <div className="flex flex-col sm:flex-row sm:justify-between text-xs font-medium text-zinc-600 gap-1 border-t border-zinc-200/60 pt-2">
                     <span>Tratamiento de inicio:</span>
-                    <span className="font-bold text-brand-magenta">Cepillo Sónico Incluido (Regalo)</span>
+                    <span className="font-bold text-brand-magenta sm:text-right">Cepillo Sónico + Masajeador Capilar (Regalo)</span>
                   </div>
                 </div>
               </div>

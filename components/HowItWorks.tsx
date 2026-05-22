@@ -11,7 +11,7 @@ export default function HowItWorks() {
           <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-zinc-900 mb-4">
             Cómo funciona Auraskin
           </h2>
-          <p className="text-zinc-550 text-zinc-500 text-sm sm:text-base leading-relaxed">
+          <p className="text-zinc-500 text-sm sm:text-base leading-relaxed">
             Ciencia y tecnología al servicio de tu rutina diaria.
           </p>
         </div>
@@ -46,7 +46,7 @@ export default function HowItWorks() {
             
             {/* Body */}
             <p className="text-zinc-600 text-sm sm:text-base leading-relaxed max-w-xs">
-              Completas un test dermatológico digital desarrollado por expertos para entender tu tipo de piel y objetivos.
+              Completas un test interactivo desarrollado por expertos para comprender tus objetivos dérmicos y necesidades específicas.
             </p>
           </div>
 

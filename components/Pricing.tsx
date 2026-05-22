@@ -12,25 +12,13 @@ export default function Pricing() {
           <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-zinc-900 mb-4">
             Elige tu plan mensual
           </h2>
-          <p className="text-zinc-500 text-sm sm:text-base leading-relaxed">
-            Recibe un regalo exclusivo en tu primera caja.
+          <p className="text-zinc-550 text-zinc-500 text-sm sm:text-base leading-relaxed">
+            Recibe un regalo exclusivo (dispositivo de belleza o capilar) en tu primera caja.
           </p>
         </div>
 
         {/* 3 Pricing Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch max-w-5xl mx-auto">
-          {/* Card 1: Mensual (Left in code, Center in design? Let's check design order!)
-              Wait! In the prototype.png, the columns order is:
-              - Column 1: Trimestral (10% OFF, RECOMMENDED) - Leftmost card.
-              - Column 2: Mensual (FLEXIBLE) - Middle card.
-              - Column 3: Semestral (15% OFF) - Rightmost card.
-              Wait! Let's match the exact order of columns from left to right as shown in prototipo.png:
-              1. Trimestral ($53.000/mes) - Pink border, Recommended.
-              2. Mensual ($58.900/mes) - Muted border.
-              3. Semestral ($50.065/mes) - Muted border.
-              This matches the image perfectly!
-          */}
-
           {/* CARD 1: Trimestral (Recommended) */}
           <div className="relative bg-white rounded-3xl border-2 border-brand-magenta flex flex-col p-6 sm:p-8 shadow-[0_15px_30px_-10px_rgba(192,59,108,0.08)] transform hover:scale-[1.01] transition-all duration-300">
             {/* Top Badges */}
@@ -68,7 +56,7 @@ export default function Pricing() {
                   <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                 </svg>
                 <span className="text-xs text-zinc-600 font-medium">
-                  Selección inteligente por <strong className="text-zinc-800">AI Routine</strong>
+                  Fórmula a medida <strong className="text-zinc-800">facial y capilar</strong>
                 </span>
               </li>
               <li className="flex items-start gap-3">
@@ -98,7 +86,7 @@ export default function Pricing() {
                   </svg>
                 </div>
                 <span className="text-xs font-semibold text-brand-magenta">
-                  Incluye: Cepillo de Limpieza Sónico
+                  Regalo: Cepillo Sónico o Masajeador Capilar
                 </span>
               </li>
             </ul>
@@ -110,8 +98,8 @@ export default function Pricing() {
               </span>
               <div className="relative w-20 h-16 bg-white rounded-lg overflow-hidden border border-zinc-100 flex items-center justify-center">
                 <Image
-                  src="/sonic-brush.png"
-                  alt="Cepillo de Limpieza Sónico"
+                  src="/images/sonic-brush.png"
+                  alt="Cepillo Sónico o Masajeador"
                   width={48}
                   height={48}
                   className="object-contain"
@@ -159,7 +147,7 @@ export default function Pricing() {
                   <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                 </svg>
                 <span className="text-xs text-zinc-600 font-medium">
-                  Selección inteligente por <strong className="text-zinc-800">AI Routine</strong>
+                  Fórmula a medida <strong className="text-zinc-800">facial y capilar</strong>
                 </span>
               </li>
               <li className="flex items-start gap-3">
@@ -175,7 +163,7 @@ export default function Pricing() {
                   </svg>
                 </div>
                 <span className="text-xs font-semibold text-brand-magenta">
-                  Incluye: Cepillo de Limpieza Sónico
+                  Regalo: Cepillo Sónico o Masajeador Capilar
                 </span>
               </li>
               <li className="flex items-start gap-3">
@@ -201,8 +189,8 @@ export default function Pricing() {
               </span>
               <div className="relative w-20 h-16 bg-white rounded-lg overflow-hidden border border-zinc-100 flex items-center justify-center">
                 <Image
-                  src="/sonic-brush.png"
-                  alt="Cepillo de Limpieza Sónico"
+                  src="/images/sonic-brush.png"
+                  alt="Cepillo Sónico o Masajeador"
                   width={48}
                   height={48}
                   className="object-contain"
@@ -250,7 +238,7 @@ export default function Pricing() {
                   <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                 </svg>
                 <span className="text-xs text-zinc-600 font-medium">
-                  Selección inteligente por <strong className="text-zinc-800">AI Routine</strong>
+                  Fórmula a medida <strong className="text-zinc-800">facial y capilar</strong>
                 </span>
               </li>
               <li className="flex items-start gap-3">
@@ -266,7 +254,7 @@ export default function Pricing() {
                   </svg>
                 </div>
                 <span className="text-xs font-semibold text-brand-magenta">
-                  Incluye: Cepillo de Limpieza Sónico
+                  Regalo: Cepillo Sónico o Masajeador Capilar
                 </span>
               </li>
               <li className="flex items-start gap-3">
@@ -292,8 +280,8 @@ export default function Pricing() {
               </span>
               <div className="relative w-20 h-16 bg-white rounded-lg overflow-hidden border border-zinc-100 flex items-center justify-center">
                 <Image
-                  src="/sonic-brush.png"
-                  alt="Cepillo de Limpieza Sónico"
+                  src="/images/sonic-brush.png"
+                  alt="Cepillo Sónico o Masajeador"
                   width={48}
                   height={48}
                   className="object-contain"

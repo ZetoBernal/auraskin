@@ -17,7 +17,7 @@ const instrumentSerif = Instrument_Serif({
 
 export const metadata: Metadata = {
   title: "Auraskin | Cuidado Inteligente de Tu Piel",
-  description: "Recibe en tu puerta una selección personalizada de productos dermatológicos de alta gama, adaptados a tus necesidades únicas cada mes.",
+  description: "Recibe en tu puerta una fórmula de ingredientes dermatológicos de alta gama adaptada a las necesidades únicas de tu piel. También incluye opciones de cuidado capilar.",
   icons: {
     icon: [
       { url: "/favicon.ico", sizes: "any" },
